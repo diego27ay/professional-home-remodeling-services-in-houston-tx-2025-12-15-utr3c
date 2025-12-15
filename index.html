@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional home remodeling services in Houston, TX. Expert craftsmanship for kitchens, bathrooms, and full home remodels that increase your home's value.">
+    <meta name="keywords" content="home remodeling, kitchen remodel, bathroom remodel, Houston TX, home renovation">
+    <meta name="author" content="RMD Remodeling">
+    <title>Professional Home Remodeling Services in Houston, TX | RMD Remodeling</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            transition: all 0.3s ease-out;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 90, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            transition: all 0.3s ease-out;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            filter: brightness(0.95);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 209, 102, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #FF5A5F;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF7A7F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 90, 95, 0.1) 0%, rgba(255, 209, 102, 0.1) 100%);
+        }
+        
+        .section-title {
+            color: #FF5A5F;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">RMD</span>
+                </div>
+                <span class="font-bold text-xl text-gray-900">Remodeling</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300">Features</a>
+                <a href="#benefits" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300">FAQ</a>
+                <a href="https://rmdremodeling.com/" class="btn-primary">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-8 py-6 flex flex-col gap-4">
+                <a href="#features" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300 py-2">Features</a>
+                <a href="#benefits" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300 py-2">Testimonials</a>
+                <a href="#faq" class="font-medium text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300 py-2">FAQ</a>
+                <a href="https://rmdremodeling.com/" class="btn-primary text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 md:py-40 lg:py-48">
+        <div class="max-w-7xl mx-auto px-8 md:px-16 flex flex-col items-center text-center gap-8">
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+                    Professional Home Remodeling Services in Houston, TX
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium max-w-3xl mx-auto">
+                    Transforming homes with expert remodeling that combines quality craftsmanship with innovative design
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://rmdremodeling.com/" class="btn-primary text-center">
+                    <i class="fas fa-arrow-right mr-2"></i>Start Your Project
+                </a>
+                <button class="px-8 py-3 rounded-full border-2 border-[#FF5A5F] text-[#FF5A5F] font-semibold hover:bg-[#FF5A5F] hover:text-white transition-all duration-300 hover:scale-105">
+                    <i class="fas fa-phone mr-2"></i>Call Us Today
+                </button>
+            </div>
+            
+            <!-- Hero Stats -->
+            <div class="grid grid-cols-3 gap-8 mt-12 w-full">
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-[#FF5A5F]">500+</p>
+                    <p class="text-gray-600 font-medium">Projects Completed</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-[#FF5A5F]">15+</p>
+                    <p class="text-gray-600 font-medium">Years Experience</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-[#FF5A5F]">4.9★</p>
+                    <p class="text-gray-600 font-medium">Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                    Expert Craftsmanship for Every Project
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We specialize in comprehensive home remodeling services tailored to your unique vision and budget
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Kitchen Remodeling -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3-8.75H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0120.25 20.25H5.75A2.25 2.25 0 013.5 18V9.75A2.25 2.25 0 015.75 7.5H18a2.25 2.25 0 012.25 2.25m-9-8.5H5.75a2.25 2.25 0 00-2.25 2.25v12a2.25 2.25 0 002.25 2.25h12.5A2.25 2.25 0 0021 18V9.75a2.25 2.25 0 00-2.25-2.25z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Kitchen Remodeling</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Transform your kitchen into a modern culinary haven. From custom cabinetry and premium countertops to state-of-the-art appliances and innovative layouts, we create kitchens that are both beautiful and highly functional. Our expert team handles everything from design consultation to final installation.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Custom cabinetry design
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Premium countertops
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Appliance installation
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Bathroom Remodeling -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12M8 7a2 2 0 100-4 2 2 0 000 4zm0 0H4m16 0h4m-4 0v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7m16 0L8 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Bathroom Remodeling</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Create your personal spa retreat with our comprehensive bathroom remodeling services. We design and install luxurious bathrooms featuring elegant fixtures, waterproofing solutions, heated floors, and spa-like amenities. Whether you're looking for a complete overhaul or strategic upgrades, we deliver excellence in every detail.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Luxury fixtures & finishes
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Tile & waterproofing
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Spa amenities
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Full Home Remodeling -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Full Home Remodeling</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Reimagine your entire living space with our comprehensive full home remodeling services. We manage every aspect of your project, from structural modifications and system upgrades to interior design and final finishing touches. Our team ensures seamless coordination and minimal disruption to your daily life.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Structural modifications
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            System upgrades
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Interior design
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                    Why Choose RMD Remodeling?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    High-quality remodeling that increases your home's value and improves your quality of life
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Increased Home Value</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our expertly executed remodeling projects add significant value to your property. Quality kitchen and bathroom renovations typically return 50-80% of their investment, making them smart financial decisions for homeowners looking to build equity.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Energy Efficiency</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We incorporate modern energy-efficient systems and materials throughout your remodel. Upgraded insulation, HVAC systems, and smart home technology reduce energy consumption, lower utility bills, and create a more comfortable living environment year-round.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Enhanced Comfort</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Transform your home into the space you've always wanted. From spa-like bathrooms to chef's kitchens, our remodeling creates functional, beautiful spaces tailored to your lifestyle and preferences, significantly improving your daily living experience.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Craftsmanship</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our team of skilled professionals brings years of experience and dedication to every project. We use premium materials, employ proven techniques, and maintain rigorous quality standards to ensure your remodel exceeds expectations and stands the test of time.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Timely Project Completion</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We respect your time and maintain strict project schedules. Our efficient planning and professional team coordination minimize disruptions and deliver your completed remodel on time, allowing you to enjoy your new space without unnecessary delays.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-[#FF5A5F] bg-opacity-10">
+                            <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personalized Design Solutions</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Every home is unique, and so is every remodel. We work closely with you to understand your vision, preferences, and budget, creating custom design solutions that perfectly reflect your style while maximizing functionality and aesthetic appeal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="relative py-24 md:py-32 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 opacity-70"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your Home?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                Let our expert team create the home of your dreams. Contact us today for a free consultation and project estimate.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://rmdremodeling.com/" class="btn-primary text-center">
+                    <i class="fas fa-star mr-2"></i>Schedule Consultation
+                </a>
+                <button class="px-8 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                    <i class="fas fa-envelope mr-2"></i>Email Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Real testimonials from homeowners who transformed their spaces with RMD Remodeling
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "RMD Remodeling completely transformed our kitchen. The team was professional, punctual, and delivered exactly what we envisioned. Our home value increased significantly, and we absolutely love the new space!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Sarah Martinez</p>
+                        <p class="text-sm text-gray-600">Homeowner, Kitchen Remodel</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The bathroom remodel exceeded all our expectations. The attention to detail, quality of materials, and craftsmanship are outstanding. Our home feels like a luxury spa, and we couldn't be happier!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">James Chen</p>
+                        <p class="text-sm text-gray-600">Homeowner, Bathroom Remodel</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "We hired RMD for a full home remodel, and they managed the entire project seamlessly. The communication was excellent, the timeline was respected, and the final result is absolutely stunning. Highly recommend!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Patricia Thompson</p>
+                        <p class="text-sm text-gray-600">Homeowner, Full Home Remodel</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md hover:shadow-xl">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Outstanding work from start to finish. The team was respectful, professional, and cleaned up daily. Our kitchen now feels brand new, and our property value has definitely increased. Worth every penny!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Michael Rodriguez</p>
+                        <p class="text-sm text-gray-600">Homeowner, Kitchen Remodel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                    About RMD Remodeling
+                </h2>
+            </div>
+            
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Founded in 2009, RMD Remodeling has been transforming homes throughout the Houston metropolitan area for over 15 years. What started as a small family operation has grown into a trusted name in residential remodeling, thanks to our unwavering commitment to quality, integrity, and customer satisfaction. Our team of skilled craftsmen and designers have successfully completed over 500 projects, ranging from single-room renovations to comprehensive whole-home transformations. We pride ourselves on our ability to turn homeowners' visions into reality while maintaining the highest standards of workmanship and professionalism.
+                </p>
+                
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Our mission is simple: to deliver exceptional remodeling services that enhance our clients' quality of life and increase the value of their homes. We believe in transparent communication, fair pricing, and meticulous attention to detail in every project we undertake. Our core values of honesty, reliability, and craftsmanship guide every decision we make. We're not just in the business of remodeling homes; we're in the business of building lasting relationships with our clients and becoming a trusted partner in their home improvement journey. When you choose RMD Remodeling, you're choosing a team that genuinely cares about your satisfaction and the success of your project.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Find answers to common questions about our remodeling services
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="faq-question p-6 md:p-8 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">How long does a typical kitchen remodel take?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Most kitchen remodels take between 4-8 weeks, depending on the scope of work and any unforeseen issues discovered during demolition. Smaller updates might be completed in 2-3 weeks, while comprehensive remodels with structural changes could take 10-12 weeks. We provide a detailed timeline during the planning phase and keep you updated throughout the project.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="faq-question p-6 md:p-8 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">What is included in your initial consultation?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our initial consultation is completely free and typically lasts 45-60 minutes. During this time, we'll discuss your project goals, budget, timeline, and design preferences. We'll take measurements, assess the current condition of the space, and identify any potential challenges. We'll also provide preliminary recommendations and answer any questions you have about our process. After the consultation, we'll prepare a detailed proposal with accurate cost estimates.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="faq-question p-6 md:p-8 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">Do you provide design services, or should I hire a designer separately?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer comprehensive design consultation as part of our service. Our experienced team can help you select materials, finishes, layouts, and color schemes that match your vision and budget. We work closely with you to ensure every design decision reflects your personal style. If you already have a designer or specific design plans, we're happy to work with those as well. Our flexibility allows us to accommodate various project approaches.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="faq-question p-6 md:p-8 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">What is your payment schedule and do you require a deposit?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, we require a 50% deposit to secure your project start date and begin material ordering. The remaining balance is typically divided into progress payments as work is completed, with the final payment due upon project completion. This payment structure protects both parties and ensures proper project management. We're happy to discuss flexible payment arrangements for larger projects to meet your financial needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="faq-question p-6 md:p-8 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-300">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">Do you offer any warranties on your work?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely. We provide a comprehensive 2-year warranty on all labor and workmanship. Additionally, all materials and appliances come with manufacturer warranties, which we'll transfer to you. We stand behind our work and are committed to your satisfaction. If any issues arise after project completion, we'll address them promptly at no additional cost to you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">RMD</span>
+                        </div>
+                        <span class="font-bold text-xl">Remodeling</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Professional home remodeling services in Houston, TX. Transforming homes with expert craftsmanship for over 15 years.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Kitchen Remodeling</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Bathroom Remodeling</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">Full Home Remodeling</a></li>
+                        <li><a href="https://rmdremodeling.com/" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Get in Touch</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:munoz.reymundo979@gmail.com" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300 text-sm">munoz.reymundo979@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span class="text-gray-400 text-sm">Houston, TX</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 RMD Remodeling. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300" aria-label="Instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300" aria-label="Twitter">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FFD166] transition-colors duration-300" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
